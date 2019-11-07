@@ -1,4 +1,4 @@
-package com.hadeethpro.personalinfoapi
+package com.hadeethpro.person.info
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

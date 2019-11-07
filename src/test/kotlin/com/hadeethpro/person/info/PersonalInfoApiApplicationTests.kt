@@ -1,9 +1,7 @@
-package com.hadeethpro.personalinfoapi
+package com.hadeethpro.person.info
 
-import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
 class PersonalInfoApiApplicationTests {
-
 }
