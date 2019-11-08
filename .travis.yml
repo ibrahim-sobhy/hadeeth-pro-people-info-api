@@ -1,12 +1,14 @@
 language: java
-sudo: required
+sudo: true
 services:
   - docker
-jdk:
-  - openjdk8
+jdk: openjdk8
 env:
   global:
-    -SHA=$(git rev-parse HEAD)
+    - SHA=$(git rev-parse HEAD)
+
+before_install:
+  - chmod +x mvnw
 
 script:
   - mvn clean install
