@@ -12,7 +12,7 @@ before_install:
 
 script:
   - mvn clean install -DskipTests
-  - docker-compose up
+  - docker-compose up -d
   - mvn test
 
 after_script:
