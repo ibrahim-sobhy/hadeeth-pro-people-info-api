@@ -3,7 +3,7 @@ sudo: required
 services:
   - docker
 jdk:
-  - oralcejdk8
+  - openjdk
 env:
   global:
     -SHA=$(git rev-parse HEAD)
