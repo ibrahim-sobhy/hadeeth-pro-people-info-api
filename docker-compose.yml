@@ -1,6 +1,7 @@
 version: '3'
 services:
   people-info-api:
+    image: ibrahimsobhy/hadeeth-pro-people-info
     build: .
     environment:
       - POSTGRES_HOST=postgres
