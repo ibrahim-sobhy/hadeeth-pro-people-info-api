@@ -1,0 +1,12 @@
+version: '3'
+services:
+  people-info-api:
+    build: .
+    environment:
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+      - POSTGRES_USER=postgres
+      - POSTGRES_PWD=postgres_password
+
+  postgres:
+    image: postgres
