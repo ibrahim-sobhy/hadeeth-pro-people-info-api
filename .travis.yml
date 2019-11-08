@@ -11,7 +11,12 @@ before_install:
   - chmod +x mvnw
 
 script:
-  - mvn clean install
+  - mvn clean install -DskipTests
+  - docker-compose up
+  - mvn test
+
+after_script:
+  - docker-compose down
 
 before_deploy:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
